@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
       },
+      spacing: {
+        '112': '28rem'
+      }
     },
   },
   plugins: [],
