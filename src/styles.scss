@@ -2,3 +2,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+body, html {
+  @apply w-full h-full;
+}
+
+/* Box Visibility
+* Only for Developpement
+*/
+* {
+  outline: red;
+}

@@ -1,0 +1,5 @@
+.landingContainer {
+  @apply w-full h-full;
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,73,121,1) 95%);
+}
