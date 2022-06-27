@@ -1,16 +1,37 @@
 .landingContainer {
-  @apply w-full h-full px-2 py-8;
+  @apply w-full h-full;
+  @apply px-2 py-8 md:px-8 md:pt-24;
   background: rgb(0,212,255);
   background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,73,121,1) 95%);
 
-  .landingTitleWrapper {
-    @apply flex flex-col gap-4;
-    .landingTitle {
-      @apply text-6xl text-slate-300 drop-shadow-xl font-bold leading-none;
-    }
+  .textWrapper {
+    @apply flex flex-col gap-8;
+    .landingTitleWrapper {
+      @apply flex flex-col gap-4;
+      .landingTitle {
+        @apply text-6xl text-slate-300 drop-shadow-xl font-bold leading-none;
+      }
 
-    .landingSubTitle {
-      @apply text-5xl font-bold leading-none text-white;
+      .landingSubTitle {
+        @apply text-5xl font-bold leading-none text-white;
+      }
+    }
+    .landingSlogan {
+      @apply text-xl leading-7 font-bold text-gray-300;
+      .landingSloganInsist {
+        @apply text-gray-600;
+      }
+    }
+  }
+  .imageWrapper {
+    @apply h-full relative flex mx-auto mt-4;
+    @apply w-2/3 py-32;
+
+    #polygon {
+      @apply w-full absolute top-0 -left-2;
+    }
+    #character {
+      @apply absolute top-0;
     }
   }
 }
