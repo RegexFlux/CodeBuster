@@ -1,5 +1,16 @@
 .landingContainer {
-  @apply w-full h-full;
+  @apply w-full h-full px-2 py-8;
   background: rgb(0,212,255);
   background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,73,121,1) 95%);
+
+  .landingTitleWrapper {
+    @apply flex flex-col gap-4;
+    .landingTitle {
+      @apply text-6xl text-slate-300 drop-shadow-xl font-bold leading-none;
+    }
+
+    .landingSubTitle {
+      @apply text-5xl font-bold leading-none text-white;
+    }
+  }
 }
