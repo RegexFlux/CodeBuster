@@ -1,6 +1,6 @@
 .buyButton {
   background-color: #3B82F6;
-  @apply p-4 rounded-xl shadow-xl text-white text-3xl leading-9 font-bold font-inter flex items-center;
+  @apply p-4 rounded-xl shadow-xl text-white text-3xl leading-9 font-bold font-inter flex items-center z-20 absolute;
   img {
     @apply w-12 h-12;
   }

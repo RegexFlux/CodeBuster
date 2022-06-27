@@ -1,7 +1,7 @@
 .landingContainer {
   @apply w-full h-full;
-  @apply flex flex-col gap-0 md:gap-16;
-  @apply px-2 py-8 md:px-8 md:pt-24;
+  @apply flex flex-col gap-0 md:gap-16 xl:gap-0;
+  @apply px-2 py-8 md:px-8 md:pt-24 2xl:px-32;
   background: rgb(0, 212, 255);
   background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 73, 121, 1) 95%);
 
@@ -10,11 +10,11 @@
     .landingTitleWrapper {
       @apply flex flex-col gap-4;
       .landingTitle {
-        @apply text-6xl text-slate-300 drop-shadow-xl font-bold leading-none;
+        @apply text-6xl text-slate-300 drop-shadow-xl font-bold leading-none md:text-9xl;
       }
 
       .landingSubTitle {
-        @apply text-5xl font-bold leading-none text-white;
+        @apply text-5xl font-bold leading-none text-white md:text-7xl;
       }
     }
 
@@ -27,15 +27,19 @@
   }
 
   .imageWrapper {
-    @apply h-full relative flex mx-auto mt-4;
-    @apply w-2/3 p-0 h-96 md:w-1/3 md:h-auto;
+    @apply h-full relative flex mx-auto mt-4 -mb-6;
+    @apply w-2/3 p-0 h-64 md:w-1/3 md:h-max;
 
     #polygon {
-      @apply w-full absolute top-0 -left-2;
+      @apply w-full absolute top-0 -left-2 h-full z-10;
     }
 
     #character {
-      @apply absolute top-0;
+      @apply mx-auto top-0 h-64 left-1/2 h-full z-30;
     }
+  }
+
+  app-buy-button {
+    @apply xl:-mt-32;
   }
 }
