@@ -2,16 +2,13 @@
   height: 200%;
 }
 
-.subContainer {
-  @apply w-full h-1/2 #{!important};
-  @apply flex flex-col gap-0 md:gap-16 xl:gap-0;
-  @apply px-2 py-8 md:px-8 md:pt-24 2xl:px-32;
+
+.landingContainer, .searchContainer {
+  @apply h-1/2 #{!important};
 }
 
 .landingContainer {
-  background: rgb(0, 212, 255);
-  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 73, 121, 1) 95%);
-
+  @apply  shadow-2xl shadow-sky-500;
   .textWrapper {
     @apply flex flex-col gap-8;
     .landingTitleWrapper {
@@ -50,12 +47,14 @@
     @apply xl:-mt-32;
   }
 }
+
 .searchContainer {
   @apply py-0;
   app-search-input {
     @apply bg-slate-700 shadow-2xl shadow-sky-500;
     border-radius: 50px;
     margin-top: -50px;
+
     mat-form-field > .mat-form-field-wrapper {
       @apply p-0 m-0;
     }

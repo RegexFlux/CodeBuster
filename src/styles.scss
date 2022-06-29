@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp';
+
 @import 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
 
 @import "tailwindcss/base";
@@ -19,4 +21,15 @@ body, html {
 */
 * {
   outline: red;
+}
+
+.subContainer {
+  @apply w-full h-full;
+  @apply flex flex-col gap-0 md:gap-16 xl:gap-0;
+  @apply px-2 py-8 md:px-8 md:pt-24 2xl:px-32;
+}
+
+.subContainerBackground {
+  background: rgb(0, 212, 255);
+  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 73, 121, 1) 95%);
 }
