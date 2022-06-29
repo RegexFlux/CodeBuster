@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationButton} from "../../interfaces/button";
 
 @Component({
   selector: 'app-pokemon',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pokemon.component.scss']
 })
 export class PokemonComponent implements OnInit {
+
+  navigationConfig: NavigationButton = {
+    routerLink: '',
+    text: 'home'
+  }
 
   constructor() { }
 
