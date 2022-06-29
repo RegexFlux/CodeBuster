@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-landing',
@@ -11,6 +12,7 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
