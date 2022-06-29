@@ -1,0 +1,12 @@
+<div class="{{pokemonClasses}} pokemonCard" [routerLink]="pokemonDetailsLink">
+  <h1>{{pokemonData.name}}</h1>
+  <swiper
+    [slidesPerView]="1"
+    [spaceBetween]="50"
+  >
+    <ng-template swiperSlide *ngFor="let sprite of pokemonSprites" >
+      <img class="spriteAsset" [alt]="sprite" [src]="sprite">
+    </ng-template>
+  </swiper>
+
+</div>
