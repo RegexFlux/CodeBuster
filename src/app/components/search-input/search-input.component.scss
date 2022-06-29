@@ -2,6 +2,10 @@ mat-label, mat-icon, input::placeholder {
   @apply text-sky-500;
 }
 
+input {
+  @apply text-slate-50;
+}
+
 mat-icon {
   @apply mr-8 w-8 h-8;
 }
