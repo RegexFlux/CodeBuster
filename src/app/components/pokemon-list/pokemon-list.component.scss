@@ -1,0 +1,18 @@
+swiper {
+  @apply p-8 overflow-y-visible;
+}
+
+:host, .cdk-viewport {
+  @apply w-full h-full;
+}
+
+.cdk-viewport {
+  @apply py-8 my-16;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    @apply w-0 h-0;
+  }
+}
