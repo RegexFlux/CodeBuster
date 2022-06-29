@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@import 'swiper/swiper-bundle.css';
+
+@import 'app/themes/default/theme';
 
 body, html {
   @apply w-full h-full;
