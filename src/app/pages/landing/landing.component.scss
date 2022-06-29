@@ -53,7 +53,7 @@
 .searchContainer {
   @apply py-0;
   app-search-input {
-    @apply bg-slate-700 shadow-2xl;
+    @apply bg-slate-700 shadow-2xl shadow-sky-500;
     border-radius: 50px;
     margin-top: -50px;
     mat-form-field > .mat-form-field-wrapper {
