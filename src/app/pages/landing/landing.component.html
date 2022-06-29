@@ -1,19 +1,22 @@
-<div class="landingContainer">
-  <div class="flex flex-col md:flex-row">
-    <div class="textWrapper">
-      <div class="landingTitleWrapper">
-        <span class="landingTitle">Pokémon</span>
-        <span class="landingSubTitle">Card Shop</span>
+<div class="globalContainer">
+  <div class="subContainer landingContainer shadow-2xl shadow-sky-500">
+    <div class="flex flex-col md:flex-row">
+      <div class="textWrapper">
+        <div class="landingTitleWrapper">
+          <span class="landingTitle">Pokémon</span>
+          <span class="landingSubTitle">Card Shop</span>
+        </div>
+        <p class="landingSlogan">
+          <span class="landingSloganInsist">Discover</span> pokemons over generations
+          <br>
+          <span class="landingSloganInsist">Buy</span> what you like</p>
       </div>
-      <p class="landingSlogan">
-        <span class="landingSloganInsist">Discover</span> pokemons over generations
-        <br>
-        <span class="landingSloganInsist">Buy</span> what you like</p>
+      <div class="imageWrapper">
+        <img src="assets/polygon-cropped.svg" id="polygon" alt="Polygon Structure SVG">
+        <img src="assets/blue-character.svg" id="character" alt="Pokemon Illustration">
+      </div>
     </div>
-    <div class="imageWrapper">
-      <img src="assets/polygon-cropped.svg" id="polygon" alt="Polygon Structure SVG">
-      <img src="assets/blue-character.svg" id="character" alt="Pokemon Illustration">
-    </div>
+    <app-buy-button></app-buy-button>
   </div>
-  <app-buy-button></app-buy-button>
+  <app-search class="subContainer searchContainer"></app-search>
 </div>
