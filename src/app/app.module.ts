@@ -4,14 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { BuyButtonComponent } from './components/buy-button/buy-button.component';
+import { BuyButtonComponent } from './components/buttons/buy-button/buy-button.component';
 import {SearchModule} from "./modules/search/search.module";
 import {IconModule} from "./modules/icon/icon.module";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatInputModule} from "@angular/material/input";
-import {MatFormFieldModule} from "@angular/material/form-field";
 import {MaterialModule} from "./modules/material/material.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {TranslationModule} from "./modules/translation/translation.module";
 
 @NgModule({
   declarations: [
@@ -25,7 +23,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AppRoutingModule,
     SearchModule,
     IconModule,
-    MaterialModule
+    MaterialModule,
+    TranslationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
