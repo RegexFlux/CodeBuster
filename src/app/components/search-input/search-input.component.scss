@@ -1,0 +1,20 @@
+mat-label, mat-icon, input::placeholder {
+  @apply text-sky-500;
+}
+
+mat-icon {
+  @apply mr-8 w-8 h-8;
+}
+
+mat-form-field {
+  @apply text-2xl w-full;
+}
+
+::ng-deep .mat-form-field-outline-start {
+  border-radius: 50px 0 0 50px !important;
+  min-width: 50px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+  border-radius: 0 50px 50px 0 !important;
+}
