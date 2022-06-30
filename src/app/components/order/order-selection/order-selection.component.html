@@ -1,16 +1,19 @@
-<div class="flex flex-col">
-  <app-custom-select [selectConfig]="generationSelect"></app-custom-select>
-  <div class="boosterContent" *ngIf="selectedBooster">
-    <div class="boosterContentData">
-      <span>{{selectedBooster.readableName}}</span>
-      <img [src]="selectedBooster.boosterAsset" alt="{{selectedBooster.readableName + ' Booster buyable'}}">
-    </div>
-    <div class="boosterContentHandleOrder">
-      <app-custom-input [inputConfig]="orderQuantityInput" [formConfig]="orderQuantityFormConfig"></app-custom-input>
-      <button class="addToCardBtn" (click)="addBoosterToCard()">
-        <mat-icon>add_shopping_cart</mat-icon>
-        <span>Add to cart</span>
-      </button>
+<div class="flex flex-col lg:flex-row-reverse gap-4">
+  <app-cart class="w-full"></app-cart>
+  <div class="flex flex-col w-full mr-auto">
+    <app-custom-select [selectConfig]="generationSelect"></app-custom-select>
+    <div class="boosterContent" *ngIf="selectedBooster">
+      <div class="boosterContentData">
+        <span>{{selectedBooster.readableName}}</span>
+        <img [src]="selectedBooster.boosterAsset" alt="{{selectedBooster.readableName + ' Booster buyable'}}">
+      </div>
+      <div class="boosterContentHandleOrder">
+        <app-custom-input [inputConfig]="orderQuantityInput" [formConfig]="orderQuantityFormConfig"></app-custom-input>
+        <button class="addToCardBtn" (click)="addBoosterToCard()">
+          <mat-icon>add_shopping_cart</mat-icon>
+          <span>Add to cart</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

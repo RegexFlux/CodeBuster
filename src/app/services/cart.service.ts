@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Booster} from "../interfaces/booster";
 import {CartItem} from "../interfaces/cart";
+import {Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,8 @@ import {CartItem} from "../interfaces/cart";
 export class CartService {
 
   private currentCart: CartItem[] = [];
+
+  private cartSubject = new Subject<CartItem[]>();
 
   constructor() {
   }
@@ -26,5 +29,17 @@ export class CartService {
       cartItem.quantity += quantity;
     }
     console.log('cart upd', this.currentCart);
+  }
+
+  getCart(): CartItem[] {
+    return this.currentCart;
+  }
+
+  getCartSubject(): Subject<CartItem[]> {
+    return this.cartSubject;
+  }
+
+  removeFromCart(toDelete: CartItem) {
+    this.currentCart.splice(this.currentCart.findIndex((item) => item.booster == toDelete.booster))
   }
 }
