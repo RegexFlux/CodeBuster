@@ -103,3 +103,7 @@ mat-label {
     white-space: break-spaces;
   }
 }
+
+[class^="ngx-cc-"] {
+  @apply text-slate-400;
+}
