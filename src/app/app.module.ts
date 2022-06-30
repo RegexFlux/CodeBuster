@@ -17,6 +17,7 @@ import {OrderSelectionComponent} from "./components/order/order-selection/order-
 import {CustomInputComponent} from "./components/forms/custom-input/custom-input.component";
 import {InputOptionalComponent} from "./components/forms/input-optional/input-optional.component";
 import {CartComponent} from "./components/cart/cart.component";
+import {CustomCheckboxComponent} from "./components/forms/custom-checkbox/custom-checkbox.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {CartComponent} from "./components/cart/cart.component";
     OrderSelectionComponent,
     CustomInputComponent,
     InputOptionalComponent,
-    CartComponent
+    CartComponent,
+    CustomCheckboxComponent
   ],
   imports: [
     BrowserModule,
