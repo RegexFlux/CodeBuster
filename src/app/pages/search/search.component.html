@@ -1,2 +1,4 @@
-<app-search-input (searchResult)="handleSearch($event)"></app-search-input>
-<app-pokemon-list [pokemons]="pokemonList"></app-pokemon-list>
+<div class="flex flex-col h-full gap-5">
+  <app-search-input (searchResult)="handleSearch($event)"></app-search-input>
+  <app-pokemon-list class="flex-grow" [pokemons]="pokemonList"></app-pokemon-list>
+</div>

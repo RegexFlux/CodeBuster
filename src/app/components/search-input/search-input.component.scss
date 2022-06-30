@@ -14,11 +14,21 @@ mat-form-field {
   @apply text-2xl w-full;
 }
 
-:host::ng-deep .mat-form-field-outline-start {
-  border-radius: 50px 0 0 50px !important;
-  min-width: 50px !important;
-}
 
-:host::ng-deep .mat-form-field-outline-end {
-  border-radius: 0 50px 50px 0 !important;
+
+:host {
+  &::ng-deep {
+    .mat-form-field-outline {
+      @apply bg-transparent;
+    }
+
+    .mat-form-field-outline-start {
+      border-radius: 50px 0 0 50px !important;
+      min-width: 50px !important;
+    }
+
+    .mat-form-field-outline-end {
+      border-radius: 0 50px 50px 0 !important;
+    }
+  }
 }
