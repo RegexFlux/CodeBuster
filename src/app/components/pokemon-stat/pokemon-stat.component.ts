@@ -16,7 +16,6 @@ export class PokemonStatComponent implements OnInit {
   }
 
   getProgressWidth() {
-    console.log('get progress');
     if (this.stat.base_stat > 100) {
       return '100%';
     }
