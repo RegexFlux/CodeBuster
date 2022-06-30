@@ -3,10 +3,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 # Note
 * To be fair to the api providers, I have disabled GraphQL search (except for pokemon retrieval). The data are stored in the associated service
 
-# Todo
+# Todo Code
 * Add Documentation
-* Apply Form Handling Lib (dev state, not ready)
 * Fix Responsive for some components
+* CleanUp CSS
+* CleanUp Architecture
+* Apply Form Handling Lib (dev state, not ready) instead of current generation
+
+# Todo Features
 * Share with indicators
 * Detect Address with auto completion
 * Integrate payment service (ex: Stripe)
@@ -19,3 +23,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 * CVC Length to be updated according to the type of card
 * Add Loading Animation
 * Add Search filters (type, generation, ...)
+* Add an option to the search bar to have a dropdown list of pre-completed pokemons
+* Add search with this option to pokemon details page (no sense without this option)
