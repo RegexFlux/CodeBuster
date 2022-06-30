@@ -1,4 +1,5 @@
 import {ValidatorFn} from "@angular/forms";
+import {CardOperation} from "../enums/card";
 
 export interface InputInterface {
   name: string;
@@ -32,4 +33,8 @@ export interface InputOptional {
 
 export interface CheckboxInterface extends InputInterface{
   checked?: boolean;
+}
+
+export interface CardInterface extends TextInterface {
+  cardOperation: CardOperation;
 }

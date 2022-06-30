@@ -1,5 +1,6 @@
-import {CheckboxInterface, TextInterface} from "../interfaces/input";
+import {CardInterface, CheckboxInterface, TextInterface} from "../interfaces/input";
 import {Validators} from "@angular/forms";
+import {CardOperation} from "../enums/card";
 
 export const orderFirstNameInput: TextInterface = {
   name: 'orderFirstName',
@@ -73,26 +74,29 @@ export const orderContactCheckBox: CheckboxInterface = {
   validators: [Validators.requiredTrue]
 }
 
-export const orderCardNumber: TextInterface = {
+export const orderCardNumber: CardInterface = {
   name: "orderCardNumber",
   label: 'order.cardNumber',
   placeholder: "XXXX XXXX XXXX XXXX",
   textType: "text",
-  validators: [Validators.required]
+  validators: [Validators.required],
+  cardOperation: CardOperation.Number
 }
 
-export const orderCardCVC: TextInterface = {
+export const orderCardCVC: CardInterface = {
   name: "orderCardCVC",
   label: 'order.cardCVC',
   placeholder: "XXX",
   textType: "text",
-  validators: [Validators.required, Validators.maxLength(3), Validators.minLength(3)]
+  validators: [Validators.required, Validators.maxLength(3), Validators.minLength(3)],
+  cardOperation: CardOperation.CVC
 }
 
-export const orderCardExpiration: TextInterface = {
+export const orderCardExpiration: CardInterface = {
   name: "orderCardExpiration",
   label: 'order.cardExpiration',
   placeholder: "XX/XX/XXXX",
   textType: "date",
-  validators: [Validators.required]
+  validators: [Validators.required],
+  cardOperation: CardOperation.Date
 }

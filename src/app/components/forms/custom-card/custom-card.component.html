@@ -1,0 +1,8 @@
+<mat-form-field [ngClass]="{'w-full': config.cardOperation == 'number'}" appearance="outline" class="text-white" [formGroup]="formConfig.formGroup">
+  <mat-label *ngIf="config.label">{{config.label | translate}}</mat-label>
+  <ng-container [ngSwitch]="config.cardOperation">
+    <ngx-cc *ngSwitchCase="'number'" [formControl]="formConfig.formControl" styleClass="card"></ngx-cc>
+    <ngx-cc-date *ngSwitchCase="'date'" [formControl]="formConfig.formControl"></ngx-cc-date>
+    <ngx-cc-cvv *ngSwitchCase="'cvc'" [formControl]="formConfig.formControl"></ngx-cc-cvv>
+  </ng-container>
+</mat-form-field>
