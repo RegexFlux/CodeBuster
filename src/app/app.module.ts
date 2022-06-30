@@ -16,6 +16,7 @@ import {OrderInfoComponent} from "./components/order/order-info/order-info.compo
 import {OrderSelectionComponent} from "./components/order/order-selection/order-selection.component";
 import {CustomInputComponent} from "./components/forms/custom-input/custom-input.component";
 import {InputOptionalComponent} from "./components/forms/input-optional/input-optional.component";
+import {CartComponent} from "./components/cart/cart.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {InputOptionalComponent} from "./components/forms/input-optional/input-op
     OrderInfoComponent,
     OrderSelectionComponent,
     CustomInputComponent,
-    InputOptionalComponent
+    InputOptionalComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
