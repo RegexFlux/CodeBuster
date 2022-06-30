@@ -1,5 +1,5 @@
 <mat-form-field appearance="outline" [formGroup]="formConfig.formGroup">
-  <mat-label>{{config.label}}</mat-label>
+  <mat-label *ngIf="config.label">{{config.label | translate}}</mat-label>
   <ng-container *ngIf="config.prefix" matPrefix>
     <app-input-optional [config]="config.prefix"></app-input-optional>
   </ng-container>

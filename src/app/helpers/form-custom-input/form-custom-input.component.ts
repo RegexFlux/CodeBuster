@@ -9,7 +9,7 @@ import {SubscriptionComponent} from "../subscription/subscription.component";
 })
 export abstract class FormCustomInputComponent extends SubscriptionComponent implements OnInit {
 
-  @Input('formControlConfig') config!: InputInterface;
+  @Input('inputConfig') config!: InputInterface;
   @Input('formConfig') formConfig?: FormConfig;
 
   ngOnInit(): void {
