@@ -10,12 +10,24 @@ import {IconModule} from "./modules/icon/icon.module";
 import {MaterialModule} from "./modules/material/material.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {TranslationModule} from "./modules/translation/translation.module";
+import {OrderComponent} from "./pages/order/order.component";
+import {CustomSelectComponent} from "./components/forms/custom-select/custom-select.component";
+import {OrderInfoComponent} from "./components/order/order-info/order-info.component";
+import {OrderSelectionComponent} from "./components/order/order-selection/order-selection.component";
+import {CustomInputComponent} from "./components/forms/custom-input/custom-input.component";
+import {InputOptionalComponent} from "./components/forms/input-optional/input-optional.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    BuyButtonComponent
+    BuyButtonComponent,
+    CustomSelectComponent,
+    OrderComponent,
+    OrderInfoComponent,
+    OrderSelectionComponent,
+    CustomInputComponent,
+    InputOptionalComponent
   ],
   imports: [
     BrowserModule,
