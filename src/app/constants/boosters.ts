@@ -4,42 +4,42 @@ export const boosterInfos = [
   {
     name: 'redAndGreen',
     readableName: 'Red & Green',
-    generation: 'Gen 1',
+    generation: 'Generation 1',
     boosterAsset: 'assets/boosters/Gen1/red-green.png',
     price: 50
   },
   {
     name: 'blue',
     readableName: 'Blue',
-    generation: 'Gen 1',
+    generation: 'Generation 1',
     boosterAsset: 'assets/boosters/Gen1/blue.png',
     price: 50
   },
   {
     name: 'redAndBlue',
     readableName: 'Red & Blue',
-    generation: 'Gen 2',
+    generation: 'Generation 2',
     boosterAsset: 'assets/boosters/Gen2/red-blue.png',
     price: 50
   },
   {
     name: 'goldAndSilver',
     readableName: 'Gold & Silver',
-    generation: 'Gen 2',
+    generation: 'Generation 2',
     boosterAsset: 'assets/boosters/Gen2/gold-silver.png',
     price: 50
   },
   {
     name: 'crystal',
     readableName: 'Crystal',
-    generation: 'Gen 2',
+    generation: 'Generation 2',
     boosterAsset: 'assets/boosters/Gen2/crystal.png',
     price: 50
   },
   {
     name: 'rubyAndSapphire',
     readableName: 'Ruby & Sapphire',
-    generation: 'Gen 3',
+    generation: 'Generation 3',
     boosterAsset: 'assets/boosters/Gen3/ruby-sapphire.png',
     price: 50
   },
