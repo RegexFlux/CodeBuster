@@ -17,23 +17,15 @@ export class SearchInputComponent implements OnInit {
   constructor(private pokemonService: PokemonService) {
   }
 
-  async fetchPokemonFromService() {
-    let pokemonList = this.pokemonService.pokemonList;
-    if (pokemonList == null) {
-      pokemonList = await this.pokemonService.loadPokemons()
-    }
-    return pokemonList;
-  }
-
   async ngOnInit(): Promise<void> {
-    const pokemonList = await this.fetchPokemonFromService();
-    if (pokemonList){
+    const pokemonList = await this.pokemonService.loadPokemons();
+    if (pokemonList)
       await this.searchResult.emit(pokemonList.slice(0, this.listQuantity));
-    }
   }
 
   async searchPokemons(name: string): Promise<void> {
-    const pokemonList = await this.fetchPokemonFromService();
-    await this.searchResult.emit(pokemonList.filter((pokemon: Pokemon) => pokemon.name.includes(name)).slice(0, this.listQuantity));
+    const pokemonList = await this.pokemonService.searchPokemons(name);
+    if (pokemonList)
+      await this.searchResult.emit(pokemonList.slice(0, this.listQuantity));
   }
 }

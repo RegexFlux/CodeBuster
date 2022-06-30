@@ -11,7 +11,7 @@ export class PokemonService {
   private pokemonSearchQuery: QueryRef<{ pokemons: Pokemon[] }, { name: string }>
   private pokemonAllQuery: QueryRef<{ pokemons: Pokemon[] }>
 
-  private _pokemonList: Pokemon[] | null = null;
+  private pokemonList: Pokemon[] | null = null;
 
   constructor(private apollo: Apollo) {
     this.pokemonSearchQuery = this.apollo.watchQuery({
@@ -23,17 +23,13 @@ export class PokemonService {
     this.loadPokemons();
   }
 
-  get pokemonList(): Pokemon[] | null {
-    return this._pokemonList;
-  }
-
-  async loadPokemons(): Promise<Pokemon[]> {
-    if (!this._pokemonList) {
+  async loadPokemons(): Promise<Pokemon[] | null> {
+    if (!this.pokemonList) {
       const result = await this.pokemonAllQuery.refetch();
-      this._pokemonList = result.data.pokemons;
-      return this._pokemonList;
+      this.pokemonList = result.data.pokemons;
+      return this.pokemonList;
     }
-    return this._pokemonList;
+    return this.pokemonList;
   }
 
   /**
@@ -46,4 +42,21 @@ export class PokemonService {
   //   console.log('result', result);
   //   return result.data.pokemons;
   // }
+
+  async searchPokemons(name: string): Promise<Pokemon[] | null> {
+    const pokemonList = await this.loadPokemons();
+    if (pokemonList) {
+      return pokemonList.filter((pokemon: Pokemon) => pokemon.name.includes(name));
+    }
+    return null;
+  }
+
+  async findPokemon(name: string): Promise<Pokemon | undefined> {
+    if (!this.pokemonList) {
+      await this.loadPokemons();
+    }
+    if (this.pokemonList)
+      return this.pokemonList.find((pokemon: Pokemon) => pokemon.name.toLowerCase() == name.toLowerCase())
+    return undefined;
+  }
 }
