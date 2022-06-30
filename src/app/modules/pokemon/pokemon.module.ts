@@ -8,6 +8,7 @@ import {IconModule} from "../icon/icon.module";
 import {NavigationButtonComponent} from "../../components/buttons/navigation-button/navigation-button.component";
 import {TranslationModule} from "../translation/translation.module";
 import {PokemonDetailsComponent} from "../../pages/pokemon-details/pokemon-details.component";
+import {OrderModule} from "../order/order.module";
 
 
 
@@ -15,7 +16,7 @@ import {PokemonDetailsComponent} from "../../pages/pokemon-details/pokemon-detai
   declarations: [
     PokemonComponent,
     PokemonDetailsComponent,
-    NavigationButtonComponent
+    NavigationButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +24,8 @@ import {PokemonDetailsComponent} from "../../pages/pokemon-details/pokemon-detai
     SearchModule,
     IconModule,
     MaterialModule,
-    TranslationModule
+    TranslationModule,
+    OrderModule
   ]
 })
 export class PokemonModule { }

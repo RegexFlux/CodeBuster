@@ -20,7 +20,8 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
   ],
   exports: [
     SearchComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    PokemonCardComponent,
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,12 @@
 <div class="subContainer subContainerBackground">
-    <app-navigation-button [navigationConfig]="navigationConfig"></app-navigation-button>
-  <div class="w-full bg-yellow-500 h-full flex gap-4 py-4">
-    <div class="w-1/3 w-full bg-red-600">
-      <app-pokemon-card *ngIf="pokemon" [pokemon]="pokemon" [hiddenName]="true"></app-pokemon-card>
+  <app-navigation-button [navigationConfig]="navigationConfig"></app-navigation-button>
+  <div class="w-full bg-yellow-500 h-full flex gap-4 py-4 flex-col lg:flex-row" *ngIf="pokemon">
+    <div class="lg:w-1/3 w-full mx-auto flex flex-col gap-4">
+      <app-pokemon-card class="w-1/3 lg:w-full mx-auto" [pokemon]="pokemon" [hiddenName]="true"></app-pokemon-card>
+        <app-buy-button></app-buy-button>
     </div>
-    <div class="w-full bg-green-600"></div>
+    <div class="w-full bg-green-600 flex flex-col gap-4 xl:px-4 h-full">
+      <span class="text-6xl text-slate-300 drop-shadow-xl font-bold leading-none md:text-7xl">{{pokemon.name}}</span>
+    </div>
   </div>
 </div>

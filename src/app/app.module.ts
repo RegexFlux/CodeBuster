@@ -10,31 +10,13 @@ import {IconModule} from "./modules/icon/icon.module";
 import {MaterialModule} from "./modules/material/material.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {TranslationModule} from "./modules/translation/translation.module";
-import {OrderComponent} from "./pages/order/order.component";
-import {CustomSelectComponent} from "./components/forms/custom-select/custom-select.component";
-import {OrderInfoComponent} from "./components/order/order-info/order-info.component";
-import {OrderSelectionComponent} from "./components/order/order-selection/order-selection.component";
-import {CustomInputComponent} from "./components/forms/custom-input/custom-input.component";
-import {InputOptionalComponent} from "./components/forms/input-optional/input-optional.component";
-import {CartComponent} from "./components/cart/cart.component";
-import {CustomCheckboxComponent} from "./components/forms/custom-checkbox/custom-checkbox.component";
-import {CustomCardComponent} from "./components/forms/custom-card/custom-card.component";
 import {NgxCcModule} from "ngx-cc";
+import {OrderModule} from "./modules/order/order.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    BuyButtonComponent,
-    CustomSelectComponent,
-    OrderComponent,
-    OrderInfoComponent,
-    OrderSelectionComponent,
-    CustomInputComponent,
-    InputOptionalComponent,
-    CartComponent,
-    CustomCheckboxComponent,
-    CustomCardComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +26,13 @@ import {NgxCcModule} from "ngx-cc";
     IconModule,
     MaterialModule,
     TranslationModule,
-    NgxCcModule
+    NgxCcModule,
+    OrderModule
   ],
   providers: [],
+  exports: [
+    BuyButtonComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

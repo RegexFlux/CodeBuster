@@ -1,0 +1,11 @@
+:host::ng-deep{
+  app-buy-button {
+    .buyButton {
+      @apply static;
+    }
+  }
+}
+
+.subContainer {
+  @apply gap-2;
+}
