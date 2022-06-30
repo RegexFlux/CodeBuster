@@ -1,5 +1,5 @@
 <div class="{{pokemonClasses}} pokemonCard" [routerLink]="pokemonDetailsLink">
-  <h1>{{pokemonData.name}}</h1>
+  <h1 *ngIf="!hiddenName">{{pokemonData.name}}</h1>
   <swiper
     [slidesPerView]="1"
     [spaceBetween]="50"

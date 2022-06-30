@@ -12,6 +12,7 @@ SwiperCore.use([Autoplay])
   styleUrls: ['./pokemon-card.component.scss']
 })
 export class PokemonCardComponent implements OnInit {
+  @Input('hiddenName') hiddenName?: boolean;
 
   public pokemonSprites: string[] = [];
   @Input('pokemon') pokemonData!: Pokemon;
