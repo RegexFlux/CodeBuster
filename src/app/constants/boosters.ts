@@ -46,6 +46,7 @@ export const boosterInfos = [
 ]
 
 export const boostersSelect: SelectInterface = {
+  name: 'boosterSelect',
   label: "Booster Edition",
   options: boosterInfos.map((info): SelectOptionInterface => {
     return {
@@ -57,6 +58,7 @@ export const boostersSelect: SelectInterface = {
 };
 
 export const quantityInput: TextInterface = {
+  name: 'orderQuantity',
   label: 'Order Quantity',
   placeholder: 'Quantity',
   prefix: {
