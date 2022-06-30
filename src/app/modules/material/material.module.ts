@@ -5,6 +5,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSelectModule} from "@angular/material/select";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 
 
@@ -17,7 +18,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatFormFieldModule,
     MatSelectModule,
     MatDialogModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatProgressBarModule
   ],
   exports : [
     ReactiveFormsModule,
@@ -26,7 +28,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatFormFieldModule,
     MatSelectModule,
     MatDialogModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }

@@ -9,6 +9,7 @@ import {NavigationButtonComponent} from "../../components/buttons/navigation-but
 import {TranslationModule} from "../translation/translation.module";
 import {PokemonDetailsComponent} from "../../pages/pokemon-details/pokemon-details.component";
 import {OrderModule} from "../order/order.module";
+import {PokemonStatComponent} from "../../components/pokemon-stat/pokemon-stat.component";
 
 
 
@@ -16,6 +17,7 @@ import {OrderModule} from "../order/order.module";
   declarations: [
     PokemonComponent,
     PokemonDetailsComponent,
+    PokemonStatComponent,
     NavigationButtonComponent,
   ],
   imports: [
@@ -25,7 +27,7 @@ import {OrderModule} from "../order/order.module";
     IconModule,
     MaterialModule,
     TranslationModule,
-    OrderModule
+    OrderModule,
   ]
 })
 export class PokemonModule { }
