@@ -1,0 +1,20 @@
+.statWrapper {
+  @apply w-full px-4;
+  .statInfoWrapper {
+    @apply flex gap-4 text-slate-50 font-medium;
+    .statName {
+      @apply text-base;
+    }
+
+    .statValue {
+      @apply text-sm;
+    }
+  }
+
+  .progressBarWrapper {
+    @apply w-full bg-gray-200 rounded-full h-2.5;
+    .progressBar {
+      @apply bg-blue-600 h-2.5 rounded-full;
+    }
+  }
+}
