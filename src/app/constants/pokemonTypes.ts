@@ -1,6 +1,6 @@
 import {PokemonTypeAsset} from "../interfaces/pokemon";
 
-export const assetPath = '/assets/'
+export const assetPath = '/assets/types/'
 
 export const pokemonTypesAssets: { [v: string]: PokemonTypeAsset } = {
   normal: {
