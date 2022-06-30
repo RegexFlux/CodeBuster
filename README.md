@@ -12,3 +12,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 * Add Country Detection for phone input
 * Switch Color Theme to green with bulbasaur instead of lucario
 * Add Stats on Deck
+* Add custom error message on input
+* CVC Length to be updated according to the type of card
