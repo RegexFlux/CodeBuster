@@ -1,0 +1,6 @@
+.typeWrapper {
+  @apply rounded-full h-12 w-12 lg:h-32 lg:w-32 bg-red-600 flex justify-center items-center shadow-2xl;
+  img {
+    @apply h-8 w-8 lg:h-20 lg:w-20 object-contain;
+  }
+}
