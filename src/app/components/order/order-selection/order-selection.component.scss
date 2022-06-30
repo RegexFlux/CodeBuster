@@ -1,0 +1,27 @@
+.boosterContent {
+  @apply flex flex-col lg:flex-row;
+
+  .addToCardBtn {
+    @apply px-6 py-4 border rounded-md shadow-xl bg-sky-500 text-slate-50 shadow-sky-200 border-sky-500 flex items-center gap-4;
+    @apply transition-all duration-500 hover:text-sky-500 hover:bg-slate-50;
+  }
+
+  .boosterContentData {
+    @apply flex flex-col;
+    span {
+      @apply text-2xl text-slate-500 font-semibold;
+    }
+
+    img {
+      @apply object-contain h-64 lg:h-96;
+    }
+  }
+
+  .boosterContentHandleOrder {
+    @apply flex flex-col justify-end;
+  }
+}
+
+:host::ng-deep.mat-form-field {
+  @apply w-full lg:w-auto;
+}
