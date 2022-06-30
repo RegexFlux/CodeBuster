@@ -5,6 +5,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSelectModule} from "@angular/material/select";
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 
 
@@ -17,7 +18,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule
   ],
   exports : [
     ReactiveFormsModule,
@@ -25,7 +27,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule
   ]
 })
 export class MaterialModule { }
