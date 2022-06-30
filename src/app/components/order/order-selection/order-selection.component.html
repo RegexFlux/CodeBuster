@@ -7,7 +7,7 @@
     </div>
     <div class="boosterContentHandleOrder">
       <app-custom-input [inputConfig]="orderQuantityInput" [formConfig]="orderQuantityFormConfig"></app-custom-input>
-      <button class="addToCardBtn">
+      <button class="addToCardBtn" (click)="addBoosterToCard()">
         <mat-icon>add_shopping_cart</mat-icon>
         <span>Add to cart</span>
       </button>

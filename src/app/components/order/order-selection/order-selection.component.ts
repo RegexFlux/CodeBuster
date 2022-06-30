@@ -4,6 +4,7 @@ import {boosterInfos, boostersSelect, quantityInput} from "../../../constants/bo
 import {Booster} from "../../../interfaces/booster";
 import {FormControl, FormGroup} from "@angular/forms";
 import {FormConfig} from "../../../interfaces/form";
+import {CartService} from "../../../services/cart.service";
 
 @Component({
   selector: 'app-order-selection',
@@ -30,7 +31,7 @@ export class OrderSelectionComponent implements OnInit {
 
   public orderQuantityFormConfig!: FormConfig;
 
-  constructor() {
+  constructor(private cartService: CartService) {
   }
 
   ngOnInit(): void {
@@ -64,5 +65,11 @@ export class OrderSelectionComponent implements OnInit {
     this.orderQuantity.setValue(value, {
       emitEvent: false
     });
+  }
+
+  addBoosterToCard() {
+    if (this.selectedBooster) {
+      this.cartService.addBoosterToCard(this.selectedBooster, Number(this.orderQuantity.value ? this.orderQuantity.value : 1));
+    }
   }
 }
