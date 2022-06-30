@@ -18,6 +18,8 @@ import {CustomInputComponent} from "./components/forms/custom-input/custom-input
 import {InputOptionalComponent} from "./components/forms/input-optional/input-optional.component";
 import {CartComponent} from "./components/cart/cart.component";
 import {CustomCheckboxComponent} from "./components/forms/custom-checkbox/custom-checkbox.component";
+import {CustomCardComponent} from "./components/forms/custom-card/custom-card.component";
+import {NgxCcModule} from "ngx-cc";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {CustomCheckboxComponent} from "./components/forms/custom-checkbox/custom
     CustomInputComponent,
     InputOptionalComponent,
     CartComponent,
-    CustomCheckboxComponent
+    CustomCheckboxComponent,
+    CustomCardComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import {CustomCheckboxComponent} from "./components/forms/custom-checkbox/custom
     IconModule,
     MaterialModule,
     TranslationModule,
+    NgxCcModule
   ],
   providers: [],
   bootstrap: [AppComponent]
