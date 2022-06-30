@@ -25,3 +25,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 * Add Search filters (type, generation, ...)
 * Add an option to the search bar to have a dropdown list of pre-completed pokemons
 * Add search with this option to pokemon details page (no sense without this option)
+* Add icons for pokemon stats and color for progress bar
+* Calcul pokemon stats progress bar based on max stat
+* Add Evolutions in details
+* Add thank you after purchase
+* Add all generations
