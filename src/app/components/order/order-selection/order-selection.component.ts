@@ -48,6 +48,8 @@ export class OrderSelectionComponent implements OnInit {
     for (const booster of boosterInfos) {
       if (booster.name == event.value) {
         this.selectedBooster = booster;
+        if (this.orderQuantityInput.suffix)
+          this.orderQuantityInput.suffix.element = String(this.selectedBooster.price);
         return;
       }
     }
@@ -55,7 +57,6 @@ export class OrderSelectionComponent implements OnInit {
 
   handleOrderQuantityChanges(value: any) {
     if (value) {
-      console.log('1');
       value = value.replace(/[^0-9]/gi, '');
       if (this.selectedBooster && this.orderQuantityInput.suffix)
         this.orderQuantityInput.suffix.element = `${value * this.selectedBooster.price} $`;

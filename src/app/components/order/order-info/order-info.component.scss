@@ -1,0 +1,11 @@
+.confirmBtn {
+  @apply px-6 py-4 border rounded-md shadow-xl flex items-center gap-4 text-slate-50 transition-all duration-500 text-center text-xl m-auto;
+  &:not(.invalid) {
+    @apply hover:bg-slate-50;
+    @apply bg-sky-500 shadow-sky-200 border-sky-500;
+    @apply hover:text-sky-500 hover:bg-slate-50;
+  }
+  &.invalid {
+    @apply text-white bg-slate-400;
+  }
+}

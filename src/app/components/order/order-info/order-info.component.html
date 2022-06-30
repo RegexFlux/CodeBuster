@@ -1,0 +1,37 @@
+<div class="flex flex-col gap-8">
+  <span class="text-2xl text-slate-500 font-semibold">Shipping Informations</span>
+  <!--  <div class="flex flex-col xl:flex-row gap-4 justify-between">-->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+      <app-custom-input [inputConfig]="controls.orderFirstName"
+                        [formConfig]="getFormConfig('orderFirstName')"></app-custom-input>
+      <app-custom-input [inputConfig]="controls.orderLastName"
+                        [formConfig]="getFormConfig('orderLastName')"></app-custom-input>
+      <app-custom-input [inputConfig]="controls.orderAddress"
+                        [formConfig]="getFormConfig('orderAddress')"></app-custom-input>
+      <app-custom-input [inputConfig]="controls.orderEmailAddress"
+                        [formConfig]="getFormConfig('orderEmailAddress')"></app-custom-input>
+      <app-custom-input [inputConfig]="controls.orderPhone"
+                        [formConfig]="getFormConfig('orderPhone')"></app-custom-input>
+    </div>
+    <div class="flex flex-col gap-4">
+      <app-custom-input [inputConfig]="controls.cardNumber"
+                        [formConfig]="getFormConfig('cardNumber')"></app-custom-input>
+      <div class="flex flex-col xl:flex-row gap-4">
+        <app-custom-input [inputConfig]="controls.cardCVC"
+                          [formConfig]="getFormConfig('cardCVC')"></app-custom-input>
+        <app-custom-input [inputConfig]="controls.cardExpiration"
+                          [formConfig]="getFormConfig('cardExpiration')"></app-custom-input>
+      </div>
+      <app-custom-checkbox [inputConfig]="controls.contact"
+                           [formConfig]="getFormConfig('contact')"></app-custom-checkbox>
+      <div class="flex flex-col xl:flex-row">
+        <app-custom-checkbox [inputConfig]="controls.cgu" [formConfig]="getFormConfig('cgu')"></app-custom-checkbox>
+
+        <button class="confirmBtn {{formGroup.invalid ? 'invalid': 'valid'}}" (click)="confirmForm()">Valider
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
