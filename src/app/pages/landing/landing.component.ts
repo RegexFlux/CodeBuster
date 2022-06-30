@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -7,12 +7,9 @@ import * as AOS from 'aos';
   styleUrls: ['./landing.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
     AOS.init();
   }
-
 }
