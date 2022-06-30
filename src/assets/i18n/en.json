@@ -1,3 +1,15 @@
 {
-  "home": "Home"
+  "home": "Home",
+  "order": {
+    "firstname": "FirstName",
+    "lastname": "LastName",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone Number",
+    "consentContact": "I consent to be contacted by email when new decks are released.",
+    "consentCgu": "I have read and i agree with the terms of use.",
+    "cardNumber": "Card Number",
+    "cardCVC": "CVC",
+    "cardExpiration": "Expiration Date"
+  }
 }
