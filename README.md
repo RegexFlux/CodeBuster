@@ -8,15 +8,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 # Note
 * To be fair to the api providers, I have disabled GraphQL search (except for pokemon retrieval). The data are stored in the associated service
 
-# Todo Code
+# Todos Code
 * Add Documentation
 * Fix Responsive for some components
 * CleanUp CSS
 * CleanUp Architecture
 * Apply Form Handling Lib (dev state, not ready) instead of current generation
 
-# Todo Features
-* Share with indicators
+# Todos Features
+* Share with metrics
 * Detect Address with auto completion
 * Integrate payment service (ex: Stripe)
 * Add detection pokemon in booster pack
@@ -35,3 +35,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 * Add Evolutions in details
 * Add thank you after purchase
 * Add all generations
+* Creation of an efficient sales tunnel
+* Long term user acquisition tunnel
+* Cookies for metrics
