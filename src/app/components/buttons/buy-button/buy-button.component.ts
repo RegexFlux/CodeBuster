@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {OrderComponent} from "../../../pages/order/order.component";
 
 @Component({
   selector: 'app-buy-button',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matDialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.openDialog();
   }
 
+  openDialog() {
+    this.matDialog.open(OrderComponent);
+  }
 }
