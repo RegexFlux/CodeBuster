@@ -1,5 +1,5 @@
 <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="cdk-viewport">
-  <div class="flex flex-wrap grid grid-cols-3 gap-4 py-8">
+  <div class="pokemonsCardWrapper">
     <app-pokemon-card *ngFor="let pokemon of pokemonsList" [pokemon]="pokemon"></app-pokemon-card>
   </div>
 </cdk-virtual-scroll-viewport>

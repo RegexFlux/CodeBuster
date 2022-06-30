@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Pokemon} from "../../interfaces/pokemon";
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pokemon-card',
@@ -14,7 +15,7 @@ export class PokemonCardComponent implements OnInit {
   pokemonClasses: string = '';
   pokemonDetailsLink: string = '';
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
   }
 
   async ngOnInit(): Promise<void> {
@@ -24,7 +25,10 @@ export class PokemonCardComponent implements OnInit {
   }
 
   setPokemonDetailsLink() {
-    this.pokemonDetailsLink = `pokemon/${this.pokemonData.name}`
+    const prefix = 'pokemon/';
+    this.pokemonDetailsLink = this.pokemonData.name;
+    if (this.router.url != '/pokemon')
+      this.pokemonDetailsLink = `${prefix}${this.pokemonData.name}`
   }
 
   setCardClasses() {
@@ -41,9 +45,9 @@ export class PokemonCardComponent implements OnInit {
       front_default: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.pokemonData.id}.png`,
       front_shiny: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${this.pokemonData.id}.png`,
     }
-    for (const [key, val] of Object.entries(spritesUri)) {
+    for (const val of Object.values(spritesUri)) {
       this.http.get(val).subscribe(
-        (next) => {
+        () => {
           this.pokemonSprites.push(val);
         },
         (err) => {
