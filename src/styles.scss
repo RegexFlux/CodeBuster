@@ -23,6 +23,21 @@ body, html {
   outline: red;
 }
 
+
+.verticalSeparator, .horizontalSeparator {
+  @apply bg-slate-400 bg-opacity-60;
+}
+
+.verticalSeparator {
+  width: 2px;
+  @apply h-full;
+}
+
+.horizontalSeparator {
+  height: 2px;
+  @apply w-full;
+}
+
 .subContainer {
   @apply w-full h-full;
   @apply flex flex-col gap-0 md:gap-16 xl:gap-0;
@@ -71,13 +86,20 @@ mat-label {
   @apply bg-white;
 }
 
-.mat-form-field-flex  {
+.mat-form-field-flex {
   @apply gap-4;
 }
 
 .mat-form-field-infix {
   top: 0 !important;
 }
+
 .mat-form-field-suffix {
   top: 0 !important;
+}
+
+.mat-checkbox-label {
+  span {
+    white-space: break-spaces;
+  }
 }
