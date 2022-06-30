@@ -21,7 +21,7 @@ export const pokemonSearchQuery = `query searchPokemons($name: String!)  {
 }`;
 
 export const pokemonAllQuery = `query allPokemons {
-  pokemon: pokemon_v2_pokemon {
+  pokemons: pokemon_v2_pokemon {
     name
     pokemon_v2_pokemonstats {
       base_stat
