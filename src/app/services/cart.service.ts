@@ -40,6 +40,6 @@ export class CartService {
   }
 
   removeFromCart(toDelete: CartItem) {
-    this.currentCart.splice(this.currentCart.findIndex((item) => item.booster == toDelete.booster))
+    this.currentCart.splice(this.currentCart.findIndex((item) => item.booster == toDelete.booster), 1)
   }
 }

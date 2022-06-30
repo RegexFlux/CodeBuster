@@ -5,9 +5,11 @@ button {
 
 .cartRow {
   min-height: 8rem;
-  @apply gap-4 text-2xl items-center px-4 grid grid-cols-1 xl:grid-cols-2;
+  //@apply gap-4 text-2xl items-center px-4 grid grid-cols-1 xl:grid-cols-2;
+  @apply gap-4 text-2xl items-center px-4 flex flex-col xl:flex-row;
   .cartItemImage {
-    @apply h-auto max-h-32;
+    max-width: 128px;
+    @apply h-auto max-h-full;
   }
 
   .cartRowInfos {
