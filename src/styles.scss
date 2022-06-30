@@ -33,3 +33,51 @@ body, html {
   background: rgb(0, 212, 255);
   background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 73, 121, 1) 95%);
 }
+
+app-search {
+  @apply mr-auto;
+}
+
+/* Material Custom with TailwindCss */
+.mat-select-value {
+  @apply text-slate-500;
+}
+
+.mat-dialog-container {
+  @apply p-2 #{!important};
+}
+
+mat-dialog-container {
+  max-width: 90vw !important;
+  width: 80vw !important;
+  min-height: 90vh !important;
+  height: 90vh !important;
+}
+
+mat-label {
+  @apply text-sky-500;
+}
+
+.mat-option-text {
+  @apply flex gap-4 items-center #{!important};
+  font-family: inherit !important;
+}
+
+.mat-select-value-text {
+  @apply text-slate-600 font-inter;
+}
+
+.mat-form-field-outline {
+  @apply bg-white;
+}
+
+.mat-form-field-flex  {
+  @apply gap-4;
+}
+
+.mat-form-field-infix {
+  top: 0 !important;
+}
+.mat-form-field-suffix {
+  top: 0 !important;
+}
