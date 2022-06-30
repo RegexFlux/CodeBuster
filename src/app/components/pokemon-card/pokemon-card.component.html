@@ -3,6 +3,7 @@
   <swiper
     [slidesPerView]="1"
     [spaceBetween]="50"
+    [autoplay]="true"
   >
     <ng-template swiperSlide *ngFor="let sprite of pokemonSprites" >
       <img class="spriteAsset" [alt]="sprite" [src]="sprite">

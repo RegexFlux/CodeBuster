@@ -3,6 +3,9 @@ import {Pokemon} from "../../interfaces/pokemon";
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 
+import SwiperCore, {Autoplay} from 'swiper';
+SwiperCore.use([Autoplay])
+
 @Component({
   selector: 'app-pokemon-card',
   templateUrl: './pokemon-card.component.html',
