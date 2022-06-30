@@ -1,0 +1,8 @@
+<div [formGroup]="formConfig.formGroup">
+  <mat-checkbox
+    [color]="'primary'"
+    [formControl]="formConfig.formControl"
+    [checked]="config.checked">
+    <span *ngIf="config.label">{{config.label | translate}}</span>
+  </mat-checkbox>
+</div>

@@ -1,9 +1,13 @@
+import {ValidatorFn} from "@angular/forms";
+
 export interface InputInterface {
+  name: string;
   label?: string;
   handleChanges?: Function;
-  value?: any;
+  value?: string | number;
   prefix?: InputOptional;
   suffix?: InputOptional;
+  validators?: ValidatorFn[]
 }
 
 export interface TextInterface extends InputInterface {
@@ -24,4 +28,8 @@ export interface SelectOptionInterface {
 export interface InputOptional {
   isIcon: boolean;
   element: string;
+}
+
+export interface CheckboxInterface extends InputInterface{
+  checked?: boolean;
 }
