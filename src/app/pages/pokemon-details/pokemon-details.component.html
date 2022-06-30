@@ -6,7 +6,12 @@
       <app-buy-button></app-buy-button>
     </div>
     <div class="w-full flex flex-col gap-4 xl:px-4 h-full">
-      <span class="text-6xl text-slate-300 drop-shadow-xl font-bold leading-none md:text-7xl">{{pokemon.name}}</span>
+      <div class="flex flex-col lg:flex-row gap-4">
+        <span class="text-6xl text-slate-300 drop-shadow-xl font-bold leading-none md:text-7xl">{{pokemon.name}}</span>
+        <div class="flex gap-4">
+          <app-pokemon-type *ngFor="let type of pokemon.pokemon_v2_pokemontypes" [type]="type"></app-pokemon-type>
+        </div>
+      </div>
       <app-pokemon-stat *ngFor="let stat of pokemon.pokemon_v2_pokemonstats" [stat]="stat"></app-pokemon-stat>
     </div>
   </div>

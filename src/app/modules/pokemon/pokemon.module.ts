@@ -10,6 +10,7 @@ import {TranslationModule} from "../translation/translation.module";
 import {PokemonDetailsComponent} from "../../pages/pokemon-details/pokemon-details.component";
 import {OrderModule} from "../order/order.module";
 import {PokemonStatComponent} from "../../components/pokemon-stat/pokemon-stat.component";
+import {PokemonTypeComponent} from "../../components/pokemon-type/pokemon-type.component";
 
 
 
@@ -18,6 +19,7 @@ import {PokemonStatComponent} from "../../components/pokemon-stat/pokemon-stat.c
     PokemonComponent,
     PokemonDetailsComponent,
     PokemonStatComponent,
+    PokemonTypeComponent,
     NavigationButtonComponent,
   ],
   imports: [

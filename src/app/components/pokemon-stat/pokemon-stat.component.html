@@ -2,12 +2,12 @@
 <!--  <span class="text-xl text-slate-400">{{stat.pokemon_v2_stat.name}}</span>-->
   <!--  <mat-progress-bar mode="determinate" [value]="stat.base_stat"></mat-progress-bar>-->
   <div class="w-full">
-    <div class="flex gap-4">
-      <span class="text-base font-medium text-blue-700 dark:text-white">{{stat.pokemon_v2_stat.name}}</span>
-      <span class="text-sm font-medium text-blue-700 dark:text-white">{{stat.base_stat}}</span>
+    <div class="flex gap-4 text-slate-50">
+      <span class="text-base font-medium">{{stat.pokemon_v2_stat.name}}</span>
+      <span class="text-sm font-medium">{{stat.base_stat}}</span>
     </div>
-    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-      <div class="bg-blue-600 h-2.5 rounded-full" [style.width]="stat.base_stat == 0 ? '0%' : getProgressWidth()"></div>
+    <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-blue-600 h-2.5 rounded-full" [style.width]="getProgressWidth()"></div>
     </div>
   </div>
 </div>
