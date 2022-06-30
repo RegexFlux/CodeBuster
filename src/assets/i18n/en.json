@@ -1,5 +1,8 @@
 {
-  "home": "Home",
+  "navigation": {
+    "home": "Home",
+    "search": "Search"
+  },
   "order": {
     "firstname": "FirstName",
     "lastname": "LastName",
