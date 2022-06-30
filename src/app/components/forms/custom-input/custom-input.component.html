@@ -1,0 +1,11 @@
+<mat-form-field appearance="outline" [formGroup]="formConfig.formGroup">
+  <mat-label>{{config.label}}</mat-label>
+  <ng-container *ngIf="config.prefix" matPrefix>
+    <app-input-optional [config]="config.prefix"></app-input-optional>
+  </ng-container>
+  <ng-container *ngIf="config.suffix" matSuffix>
+    <app-input-optional [config]="config.suffix"></app-input-optional>
+  </ng-container>
+  <input matInput [formControl]="formConfig.formControl"
+         [type]="config.textType" [placeholder]="config.placeholder"/>
+</mat-form-field>

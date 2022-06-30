@@ -1,0 +1,14 @@
+mat-option {
+  @apply font-extralight text-xl font-inter;
+  .option-primary-info {
+    @apply text-slate-600;
+  }
+  .option-secondary-info {
+    @apply text-slate-400;
+  }
+
+}
+
+.mat-form-field-wrapper {
+  height: 0;
+}

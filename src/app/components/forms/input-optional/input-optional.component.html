@@ -1,0 +1,4 @@
+<mat-icon *ngIf="config.isIcon; else text">{{config.element}}</mat-icon>
+<ng-template #text>
+  <span>{{config.element}}</span>
+</ng-template>

@@ -1,0 +1,9 @@
+<mat-form-field appearance="outline" class="text-white">
+  <mat-label>{{config.label}}</mat-label>
+  <mat-select (selectionChange)="handleChanges($event)">
+    <mat-option [value]="optionConfig.value" *ngFor="let optionConfig of config.options">
+      <span class="option-primary-info">{{optionConfig.optionPrimaryInfo}}</span>
+      <span class="option-secondary-info">{{optionConfig.optionSecondaryInfo}}</span>
+    </mat-option>
+   </mat-select>
+</mat-form-field>
