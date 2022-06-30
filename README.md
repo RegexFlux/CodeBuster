@@ -1,5 +1,10 @@
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+# Instructions
+1. git clone
+2. npm i
+3. ng serve
+
 # Note
 * To be fair to the api providers, I have disabled GraphQL search (except for pokemon retrieval). The data are stored in the associated service
 
