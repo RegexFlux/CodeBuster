@@ -10,7 +10,7 @@ export class PokemonComponent implements OnInit {
 
   navigationConfig: NavigationButton = {
     routerLink: '',
-    text: 'home'
+    text: 'navigation.home'
   }
 
   constructor() { }
